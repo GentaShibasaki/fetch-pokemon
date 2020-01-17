@@ -16,6 +16,7 @@ describe("pokemonager", () => {
     };
 
     return pokemonager.findNames(100).then((actual) => {
+      console.log(actual);
       expect(called, "Array.map() to have been called").to.be.true;
       expect(Array.isArray(actual)).to.equal(true);
       expect(actual.length).to.equal(100);
